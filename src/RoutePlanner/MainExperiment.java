@@ -2,9 +2,9 @@ package RoutePlanner;
 
 public class MainExperiment {
 
-    static final int NUMERO_AGENTES = 18000;  //18000
+    static final int NUMERO_AGENTES = 18000;
     private static final int PERIODOS = 9;
-    private static final int NUMERO_SIMULACIONES = 1; //todo 800
+    private static final int NUMERO_SIMULACIONES = 1;
     public static int SIM_ACTUAL = 0;
 
     public static void main(String[] args) {

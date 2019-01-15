@@ -21,7 +21,7 @@ public class Tourist {
     private int[] estadias;
     private int tipoAgente;
 
-    Tourist(boolean[] preferencias, int ubicacion, int tipoAgente) {
+    Tourist(boolean[] preferencias, int tipoAgente) {
 
         this.activo = true;
         this.preferencias = preferencias;
