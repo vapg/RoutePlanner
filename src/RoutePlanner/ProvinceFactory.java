@@ -208,37 +208,6 @@ class ProvinceFactory {
         probabilidadVisita[ProvinceFactory.GIPUZKOA][TouristFactory.C] = 0.24;
         probabilidadVisita[ProvinceFactory.BIZKAIA][TouristFactory.C] = 0.066;
     }
-/*
-    static void crearProvincias() {
-        provincias = new Vector<Provincia>();
-        provincias.add(new Provincia(MADRID, COMMADRID,1, new boolean[]{CULTURA, false, GASTRONOMIA},40.55));
-        provincias.add(new Provincia(ALMERIA, COMANDALUCIA, 1, new boolean[]{false, SOLYPLAYA, false},27.01));
-        provincias.add(new Provincia(CADIZ, COMANDALUCIA, 1, new boolean[]{false, SOLYPLAYA, false},30.04));
-        provincias.add(new Provincia(CORDOBA, COMANDALUCIA, 1, new boolean[]{CULTURA, false, GASTRONOMIA},46.48));
-        provincias.add(new Provincia(GRANADA, COMANDALUCIA, 1, new boolean[]{CULTURA, SOLYPLAYA, GASTRONOMIA},28.68));
-        provincias.add(new Provincia(HUELVA, COMANDALUCIA, 1, new boolean[]{CULTURA, SOLYPLAYA, GASTRONOMIA},51.75));
-        provincias.add(new Provincia(JAEN, COMANDALUCIA, 1, new boolean[]{false, false, GASTRONOMIA},33.24));
-        provincias.add(new Provincia(MALAGA, COMANDALUCIA, 1, new boolean[]{false, SOLYPLAYA, GASTRONOMIA},37.75));
-        provincias.add(new Provincia(SEVILLA, COMANDALUCIA, 1, new boolean[]{CULTURA, false, GASTRONOMIA},31.73));
-        provincias.add(new Provincia(BARCELONA, COMCATALUNA, 1, new boolean[]{CULTURA, SOLYPLAYA, false},42.42));
-        provincias.add(new Provincia(GIRONA, COMCATALUNA,1, new boolean[]{false, SOLYPLAYA, GASTRONOMIA},47.78));
-        provincias.add(new Provincia(LLEIDA, COMCATALUNA, 1, new boolean[]{false, false, GASTRONOMIA},43.47));
-        provincias.add(new Provincia(TARRAGONA, COMCATALUNA, 1, new boolean[]{false, SOLYPLAYA, false},50.35));
-        provincias.add(new Provincia(ALICANTE, COMVALENCIANA, 1, new boolean[]{false, SOLYPLAYA, false},48.33));
-        provincias.add(new Provincia(CASTELLON, COMVALENCIANA, 1, new boolean[]{false, SOLYPLAYA, false},66.15));
-        provincias.add(new Provincia(VALENCIA, COMVALENCIANA, 1, new boolean[]{false, SOLYPLAYA, false},62.98));
-        provincias.add(new Provincia(ACORUNA, COMGALICIA, 1, new boolean[]{CULTURA, SOLYPLAYA, false},39.46));
-        provincias.add(new Provincia(LUGO, COMGALICIA, 1, new boolean[]{false, SOLYPLAYA, GASTRONOMIA},23.94));
-        provincias.add(new Provincia(OURENSE, COMGALICIA, 1, new boolean[]{false, false, GASTRONOMIA},19.47));
-        provincias.add(new Provincia(PONTEVEDRA, COMGALICIA,1, new boolean[]{false, SOLYPLAYA, false},57.44));
-        provincias.add(new Provincia(ALAVA, COMPAISVASCO,1, new boolean[]{false, false, GASTRONOMIA, false},47.31));
-        provincias.add(new Provincia(GIPUZKOA, COMPAISVASCO,1, new boolean[]{false, SOLYPLAYA, false},43.39));
-        provincias.add(new Provincia(BIZKAIA, COMPAISVASCO,1, new boolean[]{CULTURA, SOLYPLAYA, false},39.45));
-
-        NUMERO_PROVINCIAS = provincias.size();
-    }
-*/
-
 
     static void crearProvincias() {
         provinces = new Vector<Province>();
@@ -315,9 +284,6 @@ class ProvinceFactory {
             default: return "ERROR DE CODIGO";
         }
     }
-
-
-
 
     private static void crearDistanciaTransporte() {
         distanciaTransporte = new double[NUMERO_PROVINCIAS][NUMERO_PROVINCIAS];

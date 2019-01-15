@@ -16,15 +16,7 @@ class Simulation {
 
     Simulation() {
         loggingTotal = new Logging();
-        configuracion = new HashMap<String, String>();
-    }
-
-    Simulation(int numeroAgentes, int periodos, String descripcion) {
-        reinit(numeroAgentes,periodos,descripcion, true);
-    }
-
-    void reinit(int numeroAgentes, int periodos, String descripcion) {
-        reinit(numeroAgentes,periodos,descripcion, true);
+        configuracion = new HashMap<>();
     }
 
     void reinit(int numeroAgentes, int periodos, String descripcion, boolean cleanBitacora) {

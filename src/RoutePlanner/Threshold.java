@@ -4,9 +4,6 @@ package RoutePlanner;
 
 public class Threshold {
 
-    public static final int TIPOUMBRAL = 3;
-    public static final int TIPOTURISTA = 7;
-
     public static double[][] UMBRALESSATISFACCIONES = {
 
             {43.6,69.1,94.6},

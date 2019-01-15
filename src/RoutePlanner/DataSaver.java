@@ -1,38 +1,19 @@
 package RoutePlanner;
 
-//import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-//import org.apache.poi.ss.usermodel.*;
-//import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-
-//import org.apache.poi..usermodel.XSSFWorkbook;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
-//import org.apache.poi.
-
 
 public class DataSaver {
 
-/*    static String getXLSFileName(String description) {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd-HH_mm");
-        Date date = new Date();
-
-        String fileName = "";
-        fileName = "Results_"+dateFormat.format(date)+"_" + description + ".xlsx";
-
-        return fileName;
-    }
-*/
 
     static String getXLSFileName(String description) {
         DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd-HH_mm");
@@ -43,10 +24,6 @@ public class DataSaver {
     }
 
     static void writeXLS(Logging logging, HashMap<String,String> configuracion, String description) {
-        //DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd-HH_mm");
-        //Date date = new Date();
-
-        //String fileName = "Results_"+dateFormat.format(date)+"_" + description +"_"+ MainExperiment.SIM_ACTUAL +".xlsx";
         String fileName = "Results_Simulation_"+ MainExperiment.SIM_ACTUAL +".xlsx";
 
 
