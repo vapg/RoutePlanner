@@ -2,7 +2,7 @@ package RoutePlanner;
 
 public class MainExperiment {
 
-    static final int NUMERO_AGENTES = 18000;
+    static final int NUMERO_AGENTES = 100;
     private static final int PERIODOS = 9;
     private static final int NUMERO_SIMULACIONES = 1;
     public static int SIM_ACTUAL = 0;

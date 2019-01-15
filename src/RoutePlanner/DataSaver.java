@@ -20,7 +20,6 @@ public class DataSaver {
         Date date = new Date();
         String fileName = "Results_Simulation_"+dateFormat.format(date);
         return fileName;
-
     }
 
     static void writeXLS(Logging logging, HashMap<String,String> configuracion, String description) {

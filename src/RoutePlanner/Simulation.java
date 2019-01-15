@@ -25,7 +25,7 @@ class Simulation {
 
         if (cleanBitacora) {
             this.loggingTotal = new Logging();
-            this.configuracion = new HashMap<String, String>();
+            this.configuracion = new HashMap<>();
         }
             this.descripcion = descripcion;
             configuracion.put("Periodos", "" + periodos);
