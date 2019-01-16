@@ -41,9 +41,13 @@ public class MainGUI2 extends JFrame {
         int PERIODOS = Integer.parseInt(textField1.getText());
         int NUMERO_AGENTES = Integer.parseInt(textField2.getText());
         int NUMERO_SIMULACIONES = Integer.parseInt(textField3.getText());
+        String DESCRIPTION = textField4.getText()+"_"+NUMERO_SIMULACIONES;
 
-        ProvinceFactory.inicializar();
+        String[] parameters = new String[]{NUMERO_AGENTES+"",PERIODOS+"",NUMERO_SIMULACIONES+"", DESCRIPTION};
 
+        MainExperiment.main(parameters);
+
+        /*
         Simulation s = new Simulation();
 
         for (int i = 1; i <= NUMERO_SIMULACIONES; ++i) {
@@ -54,6 +58,7 @@ public class MainGUI2 extends JFrame {
         }
 
         s.generarExcel();
+        */
     }
 
     private void initComponents() {

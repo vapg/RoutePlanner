@@ -62,7 +62,7 @@ class Logging {
     }
 
     void agregar(int touristaID, int dia, double presupuesto, double satisfaccion, boolean[] preferencias, int provincia, boolean activo, double costo) {
-        var record = new ArrayList<>();
+        ArrayList record = new ArrayList<>();
 
         record.add(touristaID);
         record.add(dia);

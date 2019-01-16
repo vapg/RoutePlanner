@@ -11,7 +11,7 @@ class TouristFactory {
             {1, 1, 1, 0, 0, 0, 1},
             {1, 1, 0, 1, 1, 0, 0},};
 
-    static final int NUMERO_PREFERENCIAS = PREFERENCES_COMBINATION.length - 1;
+    static final int NUMERO_PREFERENCIAS = PREFERENCES_COMBINATION.length;
 
     //grupos de turistas
     static final int GCV = 0;
@@ -37,7 +37,7 @@ class TouristFactory {
             if (contadorPreferencias > 6) {
                 contadorPreferencias = 0;
             }
-
+            
             preferencias[i][0] = PREFERENCES_COMBINATION[0][contadorPreferencias] == 1;
             preferencias[i][1] = PREFERENCES_COMBINATION[1][contadorPreferencias] == 1;
             preferencias[i][2] = PREFERENCES_COMBINATION[2][contadorPreferencias] == 1;
